@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>catalog</title>
 </head>
 <body>
     <header>
         <ul class="content-header">
-            <li><img src="http://placehold.it/150x100" alt="logo" class="logo"></li>
-            <li class="telephone"><img src="http://placehold.it/150x100" alt="telephone">+7 900 000 00 00</li>
+            <li><img src="http://placehold.it/100x100" alt="logo" class="logo"></li>
+            <li class="telephone"><img src="http://placehold.it/100x100" alt="telephone">+7 900 000 00 00</li>
             <li><input type="text" placeholder="Поиск по сайту"></li>
-            <li><a href=""><img src="http://placehold.it/150x100" alt="Человечек">Иван Иванов</a></li>
-            <li><a href=""><img src="http://placehold.it/150x100" alt="корзина">Корзина</a></li>
+            <li><a href=""><img src="http://placehold.it/100x100" alt="Человечек">Иван Иванов</a></li>
+            <li><a href=""><img src="http://placehold.it/100x100" alt="корзина">Корзина</a></li>
         </ul>
     </header>
     <nav>
@@ -35,14 +35,70 @@
         <span>Главная / Каталог / Моноблоки и ноутбуки</span>
         <hr>
         <h2>Моноблоки и ноутбуки</h2>
-        <section class="">
+        <section class="sorting">
             <ul>
-                <li><h2>Сортировка</h2></li>
+                <li><h2>сортировка</h2></li>
                 <li>По цене</li>
                 <li>По типу</li>
                 <li>По популярности</li>
                 <li>
-                    
+                    <div class="button-up"><img src="http://placehold.it/100x100" alt="вверх"></div>
+                </li>
+                <li>
+                    <div class="button-down"><img src="http://placehold.it/100x100" alt="вниз"></div>
+                </li>
+            </ul>
+        </section>
+        <section class="filter">
+            <header>
+                <h2 class="h-filter">фильтр</h2>
+            </header>
+            <span class="value">Стоимость</span>
+            <input type="range" min="0" max="10000" value="0" class="slider">
+            <span class="zero">от 0</span>
+            <span class="x10">до 10000</span>
+            <hr class="filter-line1">
+            <span class="manufacturers">Производители</span>
+            <ul>
+                <li>
+                    <input type="checkbox" >Lenovo
+                </li>
+                <li>
+                    <input type="checkbox" >Philips
+                </li>
+                <li>
+                    <input type="checkbox" checked>Acer
+                </li>
+                <li>
+                    <input type="checkbox" checked>HP
+                </li>
+            </ul>
+            <hr class="filter-line1">
+            <span class="videocard">Видеокарта</span>
+            <ul>
+                <li>
+                    <input type="radio" checked>NVidia
+                </li>
+                <li>
+                    <input type="radio">AMD
+                </li>
+                <li>
+                    <input type="radio">Встроенная
+                </li>
+            </ul>
+            <hr class="filter-line1">
+            <button class="apply">Применить</button>
+            <button class="delete_filter" type="reset">Сбросить фильтр</button>
+        </section>
+        <section class="catalog">
+            <ul>
+                <li>
+                    <div class="notebook">
+                        <img src="http://placehold.it/100x100" alt="Наличие" class="avaiable">
+                        <img src="http://placehold.it/100x100" alt="Наличие" class="notebook-image">
+                        <span class="name">Ноутбук ACER</span>
+
+                    </div>
                 </li>
             </ul>
         </section>
