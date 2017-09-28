@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Заголовок</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"
 </head>
 <body>
-    <header>
+    <header class="main-header">
             <ul class="content-header">
                 <li><a href="" class="logo"><img src="http://placehold.it/150x100" alt="logo" class="logo"></a></li>
                 <li class="telephone"><img src="http://placehold.it/150x100" alt="telephone">+7 900 000 00 00</li>
@@ -14,7 +15,7 @@
                 <li><a href=""><img src="http://placehold.it/150x100" alt="корзина">Корзина</a></li>
             </ul>
             <nav>
-                <ul>
+                <ul class="header-menu">
                      <li>Все категории+
                          <ul>
                              <li><a href="">Роутеры</a></li>
@@ -32,16 +33,20 @@
              </nav>
     </header>
     <section class="slider">
-        <h2>ноутбуки<br>
-            <span class="h2-black">
-                для офиса и дома
-            </span>
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        </p>
-        <a href="" class="slider-button">Подробнее</a>
-        <img src="http://placehold.it/150x100" alt="slider" class="slider-image">
+        <div class="slider-flex">
+            <div>
+                <h2>ноутбуки<br>
+                    <span class="h2-black">
+                        для офиса и дома
+                    </span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                </p>
+                <a href="" class="slider-button">Подробнее</a>
+            </div>
+            <img src="http://placehold.it/150x100" alt="slider" class="slider-image">
+        </div>
         <input type="radio" id="radio1" class="slider-radio1">
         <label for="radio1"></label>
         <input type="radio" id="radio2" class="slider-radio2">
