@@ -17,7 +17,80 @@ body{
 .slider-flex{
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .main-line1{
     border-top: 1px solid black;
+}
+
+.slider-button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.guarantee{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.vertical-line{
+    border-left:1px solid black;
+
+}
+
+.guarantee-button-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.guarantee-text-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.partners-list{
+    display: flex;
+    flex-direction: row;
+}
+.company-flex{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.our-company{
+    display: flex;
+    flex-direction: column;
+}
+
+.dispatch{
+    display:flex;
+    flex-direction: column;
+}
+.footer-basement{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-menu-flex{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.footer-info-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.pol{
+    display: flex;
+    flex-direction: row;
 }
