@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Заголовок</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-            <ul class="content-header">
-                <li><a href="" class="logo"><img src="image/logo.png" alt="logo" class="logo"></a></li>
-                <li class="telephone"><img src="image/telephone.png" alt="telephone">+7 900 000 00 00</li>
-                <li><input type="search" placeholder="Поиск по сайту"></li>
-                <li><a href=""><img src="image/kabinette.png" alt="Человечек">Личный кабинет</a></li>
-                <li><a href=""><img src="image/korzina.png" alt="корзина">Корзина</a></li>
-            </ul>
-            <nav>
+    <header>
+        <nav>
+            <div class="Up-header">
+                <ul class="content-header">
+                    <li class="logo"><a href=""><img src="image/logo.png" alt="logo"></a></li>
+                    <li class="telephone"><img src="image/telephone.png" alt="telephone">+7 900 000 00 00</li>
+                    <li><form><input type="search" placeholder="Поиск по сайту" id="search"><label for="search"><img src="image/search.png" class="search-image"></label></form></li>
+                    <li><a href="" class="room"><img src="image/kabinette.png" alt="Человечек">Личный кабинет</a></li>
+                    <li><a href="" class="basket"><img src="image/korzina.png" alt="корзина">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="Down-header">
                 <ul class="header-menu">
-                     <li>Все категории+
+                    <li class="categories"><a href="">Все категории+</a>
                          <ul>
                              <li><a href="">Роутеры</a></li>
                              <li><a href="">Игровые симуляторы</a></li>
@@ -30,7 +34,8 @@
                     <li><a href="">Гарантия</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
-             </nav>
+            </div>
+        </nav>
     </header>
     <section class="slider">
         <div class="slider-flex">
@@ -62,7 +67,7 @@
             </li>
         </ul>
     </section>
-    <div class="main-line1"></div>
+    <div class="main-line"></div>
     <main class="content">
         <section class="content-sections">
             <ul class="section-menu">
@@ -104,7 +109,7 @@
                 </li>
             </ul>
         </section>
-        <div class="main-line1"></div>
+        <div class="main-line"></div>
         <section class="guarantee">
             <div class="guarantee-button-flex">
                 <a href="" class="guarantee-button1">Доставка</a>
@@ -124,7 +129,7 @@
                 <img class="guarantee-image" alt="guarantee-image" src="image/garante.png">
             </div>
         </section>
-        <div class="main-line1"></div>
+        <div class="main-line"></div>
         <section class="partners">
             <ul class="partners-list">
                 <li><a href=""><img src="image/schneider.png" alt="schneider"></a></li>
