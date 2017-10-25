@@ -20,7 +20,7 @@
             </div>
             <div class="Down-header">
                 <ul class="header-menu">
-                    <li class="categories"><a href="">Все категории+</a>
+                    <li class="categories"><a href="">Все категории  +</a>
                          <ul>
                              <li><a href="">Роутеры</a></li>
                              <li><a href="">Игровые симуляторы</a></li>
@@ -37,38 +37,56 @@
             </div>
         </nav>
     </header>
-    <section class="slider">
-        <div class="slider-flex">
-            <div>
-                <h2>ноутбуки<br>
-                    <span class="h2-black">
-                        для офиса и дома
-                    </span>
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                </p>
-                <a href="" class="slider-button">Подробнее</a>
+    <main>
+        <section class="slider">
+            <div class="slider-flex">
+                <div class="slide1">
+                    <h2>НОУТБУКИ<br>
+                        <span>ДЛЯ ОФИСА И ДОМА</span>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna
+                    </p>
+                    <a href="" class="more-info">Подробнее</a>
+                </div>
+                <div class="slide2">
+                    <h2>ВСЯ ПЕРИФЕРИЯ<br>
+                        <span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </p>
+                    <a href="" class="more-info">Подробнее</a>
+                </div>
+                <div class="slide3">
+                    <h2>ТОЛЬКО ЭТОЙ ОСЕНЬЮ<br>
+                        <span>СКИДКА НА ВСЕ НОУТБУКИ</span> 30%
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <a href="" class="more-info">Подробнее</a>
+                </div>
+                <ul class="slider-button">
+                    <li>
+                        <input type="radio" id="radio1" class="slider-radio1" name="radio">
+                        <label for="radio1"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio2" class="slider-radio1" name="radio">
+                        <label for="radio2"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio3" class="slider-radio1" name="radio">
+                        <label for="radio3"></label>
+                    </li>
+                </ul>
             </div>
-            <img src="image/slider.png" alt="slider" class="slider-image">
-        </div>
-        <ul class="slider-button">
-            <li>
-                <input type="radio" id="radio1" class="slider-radio1" name="radio">
-                <label for="radio1"></label>
-            </li>
-            <li>
-                <input type="radio" id="radio2" class="slider-radio1" name="radio">
-                <label for="radio2"></label>
-            </li>
-            <li>
-                <input type="radio" id="radio3" class="slider-radio1" name="radio">
-                <label for="radio3"></label>
-            </li>
-        </ul>
-    </section>
-    <div class="main-line"></div>
-    <main class="content">
+        </section>
+        <div class="main-line"></div>
         <section class="content-sections">
             <ul class="section-menu">
                 <li>
@@ -143,9 +161,9 @@
                 <li><a href=""><img src="image/cc.png" alt="cc"></a></li>
             </ul>
         </section>
-        <div class="company-flex">
-            <section class="our-company">
-                <h2>наша компания</h2>
+        <section class="our-company">
+            <div class="company-flex">
+                <h2>НАША КОМПАНИЯ</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -160,17 +178,19 @@
                     </li>
                 </ul>
                 <a href="" class="write-to-us">
-                    <span>напишите нам</span>
+                    напишите нам
                 </a>
-            </section>
-            <section class="dispatch">
-                <h2 class="dispatch-caption">почтовая рассылка</h2>
-                <span>Узнавайте первым о новостях, акциях<br> и скидках интернет-магазина.</span>
-                <input type="email" class="email" placeholder="Ваш E-mail">
-                <span>Указанная информация не будет передана<br> третьим лицам. Вы можете отписаться от<br> почтовой рассылки в любое время</span>
-                <button class="dispatch-button">Подписаться</button>
-            </section>
-        </div>
+            </div>
+            <div class="dispatch">
+                <h2>ПОЧТОВАЯ РАССЫЛКА</h2>
+                <p>Узнавайте первым о новостях, акциях<br> и скидках интернет-магазина.</p>
+                <form>
+                    <input type="email" class="email" placeholder="Ваш E-mail">
+                </form>
+                <p class="dispatch-info">Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
+                <input type="submit" value="Подписаться" class="subscribe">
+            </div>
+        </section>
     </main>
     <footer class="basement">
         <div class="footer-basement">

@@ -80,22 +80,47 @@ a{
 
 .header-menu{
     padding-left:0;
-    height:83px;
+    height:80px;
     margin:0;
     width:1105px;
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items:center;
+    font-weight: bold;
+    font-size:22px;
 }
+
+.header-menu li{
+    width:100px;
+    padding-right: 100px;
+}
+
+.categories{
+    padding-left:50px;
+    flex-grow:1;
+}
+
+.categories ul{
+    background-color: #f0f0f0;
+    display:none;
+    flex-wrap:wrap;
+}
+
+.header-menu a{
+    color:#3c3c3c;
+}
+
 .slider{
     display:flex;
-    flex-direction: column;
+    justify-content: center;
 }
 .slider-flex{
+    background-color: #e9b637;
+    width:1005px;
+    padding:0 0 0 100px;
     display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+    overflow: hidden;
 }
 
 .slider-button{
@@ -109,63 +134,8 @@ a{
     flex-direction:row;
     justify-content:space-around;
 }
-.guarantee{
-    display:flex;
-    flex-direction: row;
-
-}
-
-.vertical-line{
-    border-left:1px solid black;
-
-}
-
-.guarantee-button-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.guarantee-text-flex{
-    display: flex;
-    flex-direction: column;
-}
 
 .partners-list{
-    display: flex;
-    flex-direction: row;
-}
-.company-flex{
-    display: flex;
-    flex-direction: row;
-
-}
-
-.our-company{
-    display: flex;
-    flex-direction: column;
-}
-
-.dispatch{
     display:flex;
-    flex-direction: column;
-}
-.footer-basement{
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-menu-flex{
-    display: flex;
-    flex-direction:column;
-
-}
-
-.footer-info-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.pol{
-    display: flex;
     flex-direction: row;
 }
