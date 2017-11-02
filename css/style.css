@@ -115,6 +115,7 @@ a{
     display:flex;
     justify-content: center;
 }
+
 .slider-flex{
     background-color: #e9b637;
     width:1005px;
@@ -123,17 +124,138 @@ a{
     overflow: hidden;
 }
 
+.slide1{
+    flex-shrink: 0;
+    width:1005px;
+    height:385px;
+    margin:0;
+    background-image: url(../image/slider1.png);
+    background-position: 88% 50%;
+    background-repeat: no-repeat;
+}
+
+.slide2{
+    flex-shrink: 0;
+    width:1150px;
+    height:385px;
+    margin:0;
+    background-image: url(../image/slider2.png);
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+}
+
+.slide3{
+    flex-shrink: 0;
+    width:1150px;
+    height:365px;
+    margin:0;
+    background-image: url(../image/slider3.png);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+}
+
+.slide{
+    order:2;
+}
+
+.slide p{
+    width:530px;
+    color:white;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+.slide h2{
+    width:700px;
+    color:white;
+    font-size:44px;
+    padding-top: 50px;
+}
+
+.slide span{
+    color:black;
+    font-size:38px;
+}
+
 .slider-button{
-    display:flex;
-    flex-direction: row;
+    width:50px;
+}
+
+.slider-button div{
+    width:10px;
+    height:10px;
+    border:2px solid white;
+    border-radius:10px;
+    margin-left:5px;
+}
+
+.slider-button div:active{
+    background: white;
+}
+
+input[type=radio]:checked + .slide{
+    order: 1;
+}
+
+.more-info{
+    width:200px;
+    border:1px solid white;
+    border-radius:5px;
+    color:white;
+    font-size:15px;
+    font-weight: bold;
+    padding:10px 50px 10px 50px;
+}
+
+.more-info:hover{
+    background: white;
+    color:#3c3c3c;
+}
+
+.more-info:active{
+    background: #959595;
+    color:white;
+}
+/* Конец слайдера */
+
+/* Начало каталога */
+
+.content-sections{
+    display: flex;
     justify-content: center;
 }
 
 .section-menu{
+    width:1120px;
+    padding-left:0;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-between;
 }
+
+.section-menu li{
+    width:170px;
+    text-align:center;
+}
+
+.section-menu div{
+    width:155px;
+    height:155px;
+    border-radius:155px;
+    border:6px solid #e9b637;
+    background-color: #f0f0f0;
+}
+
+.section-menu img{
+    position:relative;
+    top:50px;
+}
+
+.section-menu p{
+    color:black;
+    font-weight: bold;
+}
+
 
 .partners-list{
     display:flex;
