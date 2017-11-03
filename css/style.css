@@ -223,10 +223,6 @@ input[type=radio]:checked + .slide{
 
 /* Начало каталога */
 
-.guarantee input{
-    display: none;
-}
-
 .content-sections{
     display: flex;
     justify-content: center;
@@ -377,9 +373,20 @@ input[type=radio]:checked + .slaide{
 }
 
 /* Партнёры: Начало */
-.partners-list{
+.partners{
     display:flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+.partners-list{
+    width:1150px;
+    padding: 0;
+    display:flex;
+    justify-content: space-around;
+}
+
+.partners-list li:hover{
+    opacity: 0.5;
 }
 
 /* Конец Партнёры */
