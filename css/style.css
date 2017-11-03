@@ -11,7 +11,9 @@ a{
 }
 
 .main-line{
-    border-top:1px solid #d1d1d1;
+    border-top:2px solid #d1d1d1;
+    margin-top:50px;
+    padding-top:20px;
 }
 
 .Up-header{
@@ -111,6 +113,7 @@ a{
     color:#3c3c3c;
 }
 
+/* Начало Слайдер */
 .slider{
     display:flex;
     justify-content: center;
@@ -220,6 +223,10 @@ input[type=radio]:checked + .slide{
 
 /* Начало каталога */
 
+.guarantee input{
+    display: none;
+}
+
 .content-sections{
     display: flex;
     justify-content: center;
@@ -236,6 +243,8 @@ input[type=radio]:checked + .slide{
 .section-menu li{
     width:170px;
     text-align:center;
+    position:relative;
+    top:20px;
 }
 
 .section-menu div{
@@ -256,8 +265,121 @@ input[type=radio]:checked + .slide{
     font-weight: bold;
 }
 
+/* Конец Каталога */
 
+.main-line1{
+    border-top:2px solid #d1d1d1;
+    margin-top:40px;
+    padding-top:40px;
+}
+
+/* Начало Гарантия */
+
+.guarantee input{
+    display:none;
+}
+
+.guarantee{
+    display:flex;
+    justify-content: center;
+}
+
+.slider-guarantee{
+    width:1100px;
+    display:flex;
+    overflow: hidden;
+}
+
+.guarantee-button-flex{
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 60px;
+}
+
+.guarantee-button-flex label{
+    width:250px;
+    color:#3c3c3c;
+    border:1px solid #3c3c3c;
+    padding:15px 0 15px 0;
+    font-size:18px;
+    text-align:center;
+
+}
+
+.guarantee-button-flex label:hover{
+    background-color: #3c3c3c;
+    color: #e9b637;
+}
+
+.guarantee-button-flex label:active{
+    border-color: #3c3c3c;
+    background-color: #3c3c3c;
+    color: #e9b637;
+    opacity: 0.5;
+}
+
+.slaide{
+    color:#3c3c3c;
+    order:2;
+    flex-shrink: 0;
+}
+
+.slaide p{
+    width:480px;
+    opacity:0.6;
+    font-size:16px;
+}
+
+.slaide h2{
+    margin-top:10px;
+    width:560px;
+}
+
+.slider2-slide-1{
+    width:800px;
+    height:220px;
+    margin:0;
+    background-image: url(../image/Delivery.png);
+    background-position: 95% 25%;
+    background-repeat: no-repeat;
+}
+
+.slider2-slide-2{
+    width:800px;
+    height:220px;
+    margin:0;
+    background-image: url(../image/garante.png);
+    background-position: 95% 25%;
+    background-repeat: no-repeat;
+}
+
+.slider2-slide-3{
+    width:800px;
+    height:220px;
+    margin:0;
+    background-image: url(../image/Credit.png);
+    background-position: 95% 25%;
+    background-repeat: no-repeat;
+}
+
+input[type=radio]:checked + .slaide{
+    order: 1;
+}
+
+/* Конец Гарантия */
+
+.main-line2{
+    border-top:2px solid #d1d1d1;
+    margin-top:40px;
+    padding-top:10px;
+}
+
+/* Партнёры: Начало */
 .partners-list{
     display:flex;
     flex-direction: row;
 }
+
+/* Конец Партнёры */
