@@ -387,13 +387,13 @@ input[type=radio]:checked + .slaide{
 .main-line2{
     border-top:2px solid #d1d1d1;
     margin-top:40px;
-    padding-top:10px;
 }
 
 /* Партнёры: Начало */
 .partners{
     display:flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .partners-list{
@@ -450,8 +450,8 @@ input[type=radio]:checked + .slaide{
     font-size:18px;
     color: #8c8c8c;
     margin-top:40px;
-    margin-left:40px;
-    margin-righnt:30px;
+    margin-left:15px;
+    margin-right:60px;
     list-style-image: url(../image/marker.png);
 }
 
@@ -540,6 +540,7 @@ input[type=radio]:checked + .slaide{
 footer{
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .footer-basement{
@@ -579,13 +580,70 @@ footer{
 }
 
 .footer-icons{
-    width:500px;
     display: flex;
-    margin-top:70px;
+    margin-top:40px;
 }
 
 .footer-icons a:first-child{
-    padding-right:50px;
+    margin-right:50px;
 }
 
+.footer-info-flex{
+    text-align: center;
+    margin-top: 10px;
+    width: 480px;
+}
+
+.footer-info-flex ul{
+    padding:0;
+    width:480px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.footer-info-flex a{
+    color:white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Футер Права */
+
+.floor{
+    background-color:#3c3c3c;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social{
+    width:1120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social p{
+    color:white;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.footer-social ul{
+    display:flex;
+}
+
+.footer-social li{
+    margin-left:5px;
+}
+
+
+/* Футер Права конец */
+
 /* Конец Футер */
+
+/*=====================================================================================================================
+=======================================================================================================================
+======================================================================================================================*/
+
+/* 2 СТРАНИЦА */
+
