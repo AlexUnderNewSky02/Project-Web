@@ -8,52 +8,57 @@
 </head>
 <body>
     <header>
-        <ul class="content-header">
-            <li><a href=""><img src="http://placehold.it/100x100" alt="logo" class="logo"></a></li>
-            <li class="telephone"><img src="http://placehold.it/100x100" alt="telephone">+7 900 000 00 00</li>
-            <li><input type="text" placeholder="Поиск по сайту"></li>
-            <li><a href=""><img src="http://placehold.it/100x100" alt="Человечек">Иван Иванов</a></li>
-            <li><a href=""><img src="http://placehold.it/100x100" alt="корзина">Корзина</a></li>
-        </ul>
         <nav>
-            <ul>
-                <li>Все категории+
-                    <ul>
-                        <li><a href="">Роутеры</a></li>
-                        <li><a href="">Игровые симуляторы</a></li>
-                        <li><a href="">Комплектующие</a></li>
-                        <li><a href="">Периферия</a></li>
-                        <li><a href="">Настольные лампы</a></li>
-                        <li><a href="">Моноблоки и ноутбуки</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
+            <div class="Up-header">
+                <ul class="content-header">
+                    <li class="logo"><a href="index.html"><img src="image/logo.png" alt="logo"></a></li>
+                    <li class="telephone"><img src="image/telephone.png" alt="telephone">+7 900 000 00 00</li>
+                    <li><form><input type="search" placeholder="Поиск по сайту" id="search"><label for="search"><img src="image/search.png" class="search-image"></label></form></li>
+                    <li><a href="" class="room"><img src="image/kabinette.png" alt="Человечек">Личный кабинет</a></li>
+                    <li><a href="" class="basket"><img src="image/korzina.png" alt="корзина">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="Down-header">
+                <ul class="header-menu">
+                    <li class="categories"><a href="">Все категории  +</a>
+                        <ul>
+                            <li><a href="">Роутеры</a></li>
+                            <li><a href="">Игровые симуляторы</a></li>
+                            <li><a href="">Комплектующие</a></li>
+                            <li><a href="">Периферия</a></li>
+                            <li><a href="">Настольные лампы</a></li>
+                            <li><a href="">Моноблоки и ноутбуки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <ul class="catalog-menu">
-            <li>
-                <a href="">
-                    Главная
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Каталог
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    Моноблоки и ноутбуки
-                </a>
-            </li>
-        </ul>
-        <div class="line1"></div>
-        <h2>Моноблоки и ноутбуки</h2>
+        <section class="flex-catalog-menu">
+            <ul class="catalog-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li>/</li>
+                <li><a href="index.html#section">Каталог</a></li>
+                <li>/</li>
+                <li><a href="">Моноблоки и ноутбуки</a></li>
+            </ul>
+        </section>
+        <div class="monoblock">
+            <h2>Моноблоки и ноутбуки</h2>
+        </div>
         <section class="sorting">
+            <div class="content-catalog">
+                <section class="filter">
+                    <h2>ФИЛЬТР</h2>
+                    <form id="filter">
+
+                    </form>
+                </section>
+            </div>
             <ul>
                 <li><h2>фильтр</h2></li>
                 <li><h2>сортировка</h2></li>
@@ -180,33 +185,41 @@
             </section>
         </div>
     </main>
-    <footer class="basement">
-        <div class="footer-menu-flex">
-            <ul class="footer-menu">
-                <li><a href=""><img src="http://placehold.it/150x100" alt="logo"></a></li>
-                <li>г.москва, ул. строителей, 15<br> к 1 офис 456</li>
-                <li>8-800-5000-616</li>
-                <li><a href=""><img src="http://placehold.it/150x100" alt="Человечек">Личный кабинет</a></li>
-                <li><a href=""><img src="http://placehold.it/150x100" alt="корзина">Корзина</a></li>
-            </ul>
+    <footer>
+        <div class="footer-basement">
+            <div class="footer-flex">
+                <div class="footer-adress">
+                    <a href="" class="footer-logo"><img src="image/logo.png" alt="logo"></a></l>
+                    <div class="adress">
+                        <p>Г. МОСКВА, Ул. СТРОИТЕЛЕЙ, 15<br> К 1 ОФИС 456</p></li>
+                        <p class="tel">8-800-5000-616</p>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="" class="room"><img src="image/kabinette.png" alt="Человечек">Личный кабинет</a>
+                        <a href="" class="basket"><img src="image/korzina.png" alt="корзина">Корзина</a>
+                    </div>
+                </div>
+                <div class="footer-info-flex">
+                    <ul>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Гарантия</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1892.612846028995!2d37.768711083388474!3d55.659276029667026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1510078901484" width="475" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-        <div class="footer-info-flex">
-            <ul class="footer-info">
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><img src="http://placehold.it/150x100" alt="Map"></li>
-            </ul>
+        <div class="floor">
+            <div class="footer-social">
+                <p>Все права защищенны 2017</p>
+                <ul>
+                    <li><a href=""><img src="image/vk.png" alt="VK"></a></li>
+                    <li><a href=""><img src="image/face.png" alt="Facebook"></a></li>
+                    <li><a href=""><img src="image/twit.png" alt="Twitter"></a></li>
+                    <li><a href=""><img src="image/mail.png" alt="E-mail"></a></li>
+                </ul>
+            </div>
         </div>
-        <section>
-            <ul class="footer-social">
-                <li>Все права защищенны 2017</li>
-                <li><img src="http://placehold.it/150x100" alt="VK"></li>
-                <li><img src="http://placehold.it/150x100" alt="Facebook"></li>
-                <li><img src="http://placehold.it/150x100" alt="Twitter"></li>
-                <li><img src="http://placehold.it/150x100" alt="E-mail"></li>
-            </ul>
-        </section>
     </footer>
 </body>
 </html>
