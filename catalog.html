@@ -55,135 +55,144 @@
                 <section class="filter">
                     <h2>ФИЛЬТР</h2>
                     <form id="filter">
-
+                        <fieldset class="cost">
+                            <h3>Стоимость</h3>
+                            <div class="range">
+                                <div class="the-slider">
+                                    <div></div>
+                                    <div class="switch2"></div>
+                                </div>
+                            </div>
+                            <div class="from-to">
+                                <p>от 0</p>
+                                <p>до 10000</p>
+                            </div>
+                        </fieldset>
+                        <fieldset class="manufac">
+                            <h3>Производители</h3>
+                            <ul>
+                                <li>
+                                    <input name="check" id="check1" type="checkbox">
+                                    <label for="check1">Lenovo</label>
+                                </li>
+                                <li>
+                                    <input name="check" id="check2" type="checkbox">
+                                    <label for="check2">Philips</label>
+                                </li>
+                                <li>
+                                    <input name="check" id="check3" type="checkbox" checked>
+                                    <label for="check3">Acer</label>
+                                </li>
+                                <li>
+                                    <input name="check" id="check4" type="checkbox" checked>
+                                    <label for="check4">HP</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="videocard">
+                            <h3>Видеокарта</h3>
+                            <ul>
+                                <li>
+                                    <input name="radio" id="radio1" type="radio" checked>
+                                    <label for="radio1">NVidia</label>
+                                </li>
+                                <li>
+                                    <input name="radio" id="radio2" type="radio">
+                                    <label for="radio2">AMD</label>
+                                </li>
+                                <li>
+                                    <input name="radio" id="radio3" type="radio">
+                                    <label for="radio3">Встроенная</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <div>
+                                <input type="submit" class="accept" value="Применить">
+                                <input type="reset" class="reset" form="filter" value="Сбросить фильтр">
+                            </div>
+                        </fieldset>
                     </form>
                 </section>
+                <section class="sorting">
+                    <div class="sorting-button">
+                        <h2>СОРТИРОВКА</h2>
+                        <ul>
+                            <li><a href="#">ПО ЦЕНЕ</a></li>
+                            <li><a href="#">ПО ТИПУ</a></li>
+                            <li><a href="#">ПО ПОПУЛЯРНОСТИ</a></li>
+                        </ul>
+                        <div>
+                            <a href="#" class="up">↑</a>
+                            <a href="#" class="down">↓</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="ACER">
+                            <p class="in-stock">В наличии</p>
+                            <h3>Ноутбук ACER</h3>
+                            <div class="price">
+                                <div>
+                                <button>-</button>
+                                <input id="acer" type="text" placeholder="1">
+                                <button>+</button>
+                                </div>
+                                <p><span class="price-list">11020</span>РУБ</p>
+                            </div>
+                            <input type="submit" value="В корзину">
+                        </div>
+                        <div class="APPLE">
+                            <p class="in-stock">В наличии</p>
+                            <h3>Ноутбук Apple</h3>
+                            <div class="price">
+                                <div>
+                                    <button>-</button>
+                                    <input id="apple" type="text" placeholder="1">
+                                    <button>+</button>
+                                </div>
+                                <p><span class="price-list">11020</span>РУБ</p>
+                            </div>
+                            <input type="submit" value="В корзину">
+                        </div>
+                        <div class="HP-PAVILLION">
+                            <p class="in-stock">В наличии</p>
+                            <h3>Ноутбук HP Pavillion</h3>
+                            <div class="price">
+                                <div>
+                                    <button>-</button>
+                                    <input id="hp-pavillion" type="text" placeholder="1">
+                                    <button>+</button>
+                                </div>
+                                <p><span class="price-list">11020</span>РУБ</p>
+                            </div>
+                            <input type="submit" value="В корзину">
+                        </div>
+                        <div class="HP-PAVILLION6">
+                            <p class="in-stock">В наличии</p>
+                            <h3>Ноутбук HP Pavillion 6</h3>
+                            <div class="price">
+                                <div>
+                                    <button>-</button>
+                                    <input id="hp-pavillion6" type="text" placeholder="1">
+                                    <button>+</button>
+                                </div>
+                                <p><span class="price-list">11020</span>РУБ</p>
+                            </div>
+                            <input type="submit" value="В корзину">
+                        </div>
+                    </div>
+                    <div class="sorting-floor">
+                        <ul>
+                            <li><a href="#" class="back">Предыдущая</a></li>
+                            <li><a href="#" class="page">1</a></li>
+                            <li><a href="#" class="page">2</a></li>
+                            <li><a href="#" class="page">3</a></li>
+                            <li><a href="#" class="next">Следующая</a></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <ul>
-                <li><h2>фильтр</h2></li>
-                <li><h2>сортировка</h2></li>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По популярности</li>
-                <li>
-                    <a class="button-up"><img src="http://placehold.it/100x100" alt="вверх"></a>
-                </li>
-                <li>
-                    <a class="button-down"><img src="http://placehold.it/100x100" alt="вниз"></a>
-                </li>
-            </ul>
         </section>
-        <div class="catalog-flex">
-            <section class="filter">
-                <span class="value">Стоимость</span>
-                <input type="range" min="0" max="10000" value="0" class="slider">
-                <span class="zero">от 0</span>
-                <span class="x10">до 10 000</span>
-                <div class="filter-line1"></div>
-                <span class="manufacturers">Производители</span>
-                <ul>
-                    <li>
-                        <input type="checkbox" >Lenovo
-                    </li>
-                    <li>
-                        <input type="checkbox" >Philips
-                    </li>
-                    <li>
-                        <input type="checkbox" checked>Acer
-                    </li>
-                    <li>
-                        <input type="checkbox" checked>HP
-                    </li>
-                </ul>
-                <div class="filter-line1"></div>
-                <span class="videocard">Видеокарта</span>
-                <ul>
-                    <li>
-                        <input type="radio" checked>NVidia
-                    </li>
-                    <li>
-                        <input type="radio">AMD
-                    </li>
-                    <li>
-                        <input type="radio">Встроенная
-                    </li>
-                </ul>
-                <div class="filter-line1"></div>
-                <button class="apply">Применить</button>
-                <button class="delete_filter" type="reset">Сбросить фильтр</button>
-            </section>
-            <section class="catalog">
-                <ul>
-                    <li>
-                        <div class="notebook">
-                            <div class="avaiable">В наличии</div>
-                            <img src="http://placehold.it/100x100" alt="Наличие" class="notebook-image">
-                            <p class="name">Ноутбук ACER</p>
-                            <button class="notebook-down">-</button>
-                            <input type="text" class="number-notebook">
-                            <button class="notebook-up">+</button>
-                            <p class="rub">
-                                <span class="price">11020</span>
-                                руб
-                            </p>
-                            <button class="notebook-basket">В корзину</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="notebook">
-                            <div class="avaiable">В наличии</div>
-                            <img src="http://placehold.it/100x100" alt="Наличие" class="notebook-image">
-                            <p class="name">Ноутбук Apple</p>
-                            <button class="notebook-down">-</button>
-                            <input type="text" class="number-notebook">
-                            <button class="notebook-up">+</button>
-                            <p class="rub">
-                                <span class="price">11020</span>
-                                руб
-                            </p>
-                            <button class="notebook-basket">В корзину</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="notebook">
-                            <div class="avaiable">В наличии</div>
-                            <img src="http://placehold.it/100x100" alt="Наличие" class="notebook-image">
-                            <p class="name">Ноутбук HP Pavillion</p>
-                            <button class="notebook-down">-</button>
-                            <input type="text" class="number-notebook">
-                            <button class="notebook-up">+</button>
-                            <p class="rub">
-                                <span class="price">11020</span>
-                                руб
-                            </p>
-                            <button class="notebook-basket">В корзину</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="notebook">
-                            <div class="avaiable">В наличии</div>
-                            <img src="http://placehold.it/100x100" alt="Наличие" class="notebook-image">
-                            <p class="name">Ноутбук HP Pavillion 6</p>
-                            <button class="notebook-down">-</button>
-                            <input type="text" class="number-notebook">
-                            <button class="notebook-up">+</button>
-                            <p class="rub">
-                                <span class="price">11020</span>
-                                руб
-                            </p>
-                            <button class="notebook-basket">В корзину</button>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="button-catalog">
-                    <li><a href="" class="previous-next">Предыдущая</a></li>
-                    <li><a href="" class="circle">1</a></li>
-                    <li><a href="" class="circle">2</a></li>
-                    <li><a href="" class="circle">3</a></li>
-                    <li><a href class="previous-next">Следующая</a></li>
-                </ul>
-            </section>
-        </div>
     </main>
     <footer>
         <div class="footer-basement">
